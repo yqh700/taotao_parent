@@ -10,4 +10,12 @@
     <artifactId>taotao_manager_domain</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.github.abel533</groupId>
+            <artifactId>mapper</artifactId>
+        </dependency>
+
+    </dependencies>
+
 </project>

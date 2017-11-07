@@ -18,7 +18,13 @@
     <dubbo:protocol name="dubbo" port="20880"></dubbo:protocol>
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.taotao.manager.service.TestService"
-                   ref="testServiceImpl"></dubbo:service>
+    <!--商品类目-->
+    <dubbo:service interface="com.taotao.manager.service.ItemCatService"
+                   ref="itemCatServiceImpl"></dubbo:service>
+
+    <!--商品-->
+    <dubbo:service interface="com.taotao.manager.service.ItemService"
+                   ref="itemServiceImpl"></dubbo:service>
+
 
 </beans>

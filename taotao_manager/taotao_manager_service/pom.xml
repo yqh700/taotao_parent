@@ -13,15 +13,15 @@
         <!-- taotao-manager-interface依赖 -->
         <dependency>
             <groupId>com.taotao</groupId>
-            <artifactId>taotao-manager-interface</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>taotao_manager_interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <!-- taotao-manager-mapper依赖 -->
         <dependency>
             <groupId>com.taotao</groupId>
-            <artifactId>taotao-manager-mapper</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <artifactId>taotao_manager_mapper</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <!-- spring -->
@@ -46,6 +46,16 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <!-- 分页助手 -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.jsqlparser</groupId>
+            <artifactId>jsqlparser</artifactId>
         </dependency>
 
         <!-- dubbo相关 -->

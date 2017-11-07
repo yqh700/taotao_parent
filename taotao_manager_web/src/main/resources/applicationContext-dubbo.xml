@@ -15,8 +15,11 @@
 	<dubbo:registry protocol="zookeeper" address="192.168.100.20:2181"></dubbo:registry>
 	
 	<!-- 远程服务代理 -->
-	<dubbo:reference interface="com.taotao.manager.service.TestService"
-		timeout="1000000" id="testService"></dubbo:reference>
-	
+	<!--商品类目-->
+	<dubbo:reference interface="com.taotao.manager.service.ItemCatService"
+					 timeout="1000000" id="itemCatService"></dubbo:reference>
 
+	<!--商品-->
+	<dubbo:reference interface="com.taotao.manager.service.ItemService"
+					 timeout="1000000" id="itemService"></dubbo:reference>
 </beans>
