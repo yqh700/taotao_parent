@@ -22,4 +22,12 @@
 	<!--商品-->
 	<dubbo:reference interface="com.taotao.manager.service.ItemService"
 					 timeout="1000000" id="itemService"></dubbo:reference>
+
+	<!--内容分类-->
+	<dubbo:reference interface="com.taotao.content.service.ContentCategoryService"
+					 timeout="1000000" id="contentCategoryServiceImpl"></dubbo:reference>
+
+	<!--内容-->
+	<dubbo:reference interface="com.taotao.content.service.ContentService"
+					 timeout="1000000" id="contentServiceImpl"></dubbo:reference>
 </beans>

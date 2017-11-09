@@ -55,7 +55,7 @@ public class BaseServiceImpl<T extends BasePojo> implements BaseService<T> {
     public List<T> findByPage(Integer page, Integer rows) {
         PageHelper.startPage(page, rows);
         List<T> list = mapper.select(null);
-        return new ArrayList<>(list);
+        return list;
     }
 
     @Override
