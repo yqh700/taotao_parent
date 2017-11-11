@@ -14,17 +14,15 @@
     <!-- zookeeper 注册中心 -->
     <dubbo:registry protocol="zookeeper" address="192.168.100.20:2181"></dubbo:registry>
 
-    <!-- 用 dubbo 协议在 20881 端口暴露服务 -->
-    <dubbo:protocol name="dubbo" port="20881"></dubbo:protocol>
+    <!-- 用 dubbo 协议在 20882 端口暴露服务 -->
+    <dubbo:protocol name="dubbo" port="20882"></dubbo:protocol>
 
     <!-- 声明需要暴露的服务接口 -->
-    <!--内容分类-->
-    <dubbo:service interface="com.taotao.content.service.ContentCategoryService"
-                   ref="contentCategoryServiceImpl"></dubbo:service>
+    <!--用户-->
+    <dubbo:service interface="com.taotao.sso.service.UserService"
+                   ref="userServiceImpl"></dubbo:service>
 
-    <!--内容-->
-    <dubbo:service interface="com.taotao.content.service.ContentService"
-                   ref="contentServiceImpl"></dubbo:service>
+
 
 
 </beans>
