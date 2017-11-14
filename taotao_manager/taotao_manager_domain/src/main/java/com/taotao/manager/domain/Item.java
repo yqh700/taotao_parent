@@ -1,5 +1,7 @@
 package com.taotao.manager.domain;
 
+import org.apache.commons.lang3.StringUtils;
+
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -109,6 +111,12 @@ public class Item extends BasePojo {
         this.status = status;
     }
 
+    public String [] getImages() {
+        if(StringUtils.isNotBlank(getImage())) {
+            return StringUtils.split(getImage(), ",");
+        }
+        return null;
+    }
     @Override
     public String toString() {
         return "Item [id=" + id + ", title=" + title + ", sellPoint=" + sellPoint + ", price=" + price

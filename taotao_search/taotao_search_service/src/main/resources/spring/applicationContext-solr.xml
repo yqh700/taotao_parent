@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.apache.solr.client.solrj.impl.CloudSolrServer">
+        <!--zookeeper 集群主机信息-->
+        <constructor-arg name="zkHost" value="${zkHost}"></constructor-arg>
+        <!--默认的索引库名称-->
+        <property name="defaultCollection" value="${defaultCollection}"></property>
+    </bean>
+
+</beans>
