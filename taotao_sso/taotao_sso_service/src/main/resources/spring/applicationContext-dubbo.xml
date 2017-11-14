@@ -9,7 +9,7 @@
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <!-- 提供方应用信息，用于计算依赖关系 -->
-    <dubbo:application name="taotao-manager-service"/>
+    <dubbo:application name="taotao-sso-service"/>
 
     <!-- zookeeper 注册中心 -->
     <dubbo:registry protocol="zookeeper" address="192.168.100.20:2181"></dubbo:registry>

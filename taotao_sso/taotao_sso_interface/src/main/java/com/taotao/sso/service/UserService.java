@@ -22,4 +22,17 @@ public interface UserService {
      * @return
      */
     User queryUserByTicket(String ticket);
+
+    /**
+     * 用户注册
+     * @param user
+     */
+    void doRegister(User user);
+
+    /**
+     * 用户登录
+     * @param user
+     * @return
+     */
+    String doLogin(User user);
 }
