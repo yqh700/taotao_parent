@@ -107,7 +107,18 @@ public class SearchServiceImpl implements SearchService {
     @Override
     public void saveItem(long itemId) {
         //查询要更新的商品
-        Item item = itemMapper.selectByPrimaryKey(itemId);
+        Item item = null;
+        while(true) {
+            item = itemMapper.selectByPrimaryKey(itemId);
+            if(item != null) {
+                break;
+            }
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
 
         //构建文档进行更新
         SolrInputDocument document = new SolrInputDocument();

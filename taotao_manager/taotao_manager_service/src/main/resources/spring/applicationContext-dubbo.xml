@@ -26,5 +26,8 @@
     <dubbo:service interface="com.taotao.manager.service.ItemService"
                    ref="itemServiceImpl"></dubbo:service>
 
+    <!--商品详情-->
+    <dubbo:service interface="com.taotao.manager.service.ItemDescService"
+                   ref="itemDescServiceImpl"></dubbo:service>
 
 </beans>
