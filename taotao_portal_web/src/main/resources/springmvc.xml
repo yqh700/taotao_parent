@@ -18,7 +18,7 @@
     <context:property-placeholder location="classpath:env.properties"></context:property-placeholder>
 	
     <!-- 组件扫描 -->
-    <context:component-scan base-package="com.taotao.portal.web.controller"></context:component-scan>
+    <context:component-scan base-package="com.taotao.portal"></context:component-scan>
 
     <!-- 注解驱动 -->
     <mvc:annotation-driven></mvc:annotation-driven>

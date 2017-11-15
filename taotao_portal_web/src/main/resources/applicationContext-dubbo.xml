@@ -22,4 +22,12 @@
 	<!--单点登录-->
 	<dubbo:reference interface="com.taotao.sso.service.UserService"
 					 timeout="1000000" id="userService"></dubbo:reference>
+
+	<!--购物车-->
+	<dubbo:reference interface="com.taotao.cart.service.CartService"
+					 timeout="1000000" id="cartService"></dubbo:reference>
+
+	<!--商品-->
+	<dubbo:reference interface="com.taotao.manager.service.ItemService"
+					 timeout="1000000" id="itemService"></dubbo:reference>
 </beans>
