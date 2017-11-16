@@ -11,7 +11,7 @@
     </bean>
 
     <!--单机服务-->
-    <!--<bean class="com.taotao.content.redis.impl.RedisPool"></bean>-->
+    <!--<bean class="com.taotao.contRedisPoolPool"></bean>-->
 
     <bean class="redis.clients.jedis.JedisCluster">
         <constructor-arg name="nodes">

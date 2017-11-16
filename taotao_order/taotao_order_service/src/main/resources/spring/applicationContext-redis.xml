@@ -45,5 +45,5 @@
     </bean>
 
     <!--集群服务-->
-    <bean class="com.taotao.sso.redis.impl.RedisCluster"></bean>
+    <bean class="com.taotao.order.redis.impl.RedisCluster"></bean>
 </beans>

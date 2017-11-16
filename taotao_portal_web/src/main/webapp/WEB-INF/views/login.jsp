@@ -200,6 +200,7 @@
    });
    
    $("#loginsubmit").click(function () {
+        var redirectUrl = "${redirectURL}";
 	    var flag = validateFunction.FORM_validate();
 	    if (flag) {
 	        var uuid = $("#uuid").val();
@@ -222,8 +223,12 @@
 	                if (result) {
 	                    var obj = eval(result);
 	                    if (obj.status == 200) {
-                    		//登录成功，跳转到首页
-                    		obj.success = "http://www.taotao.com/";
+	                        if(redirectUrl) {
+	                            obj.success = redirectUrl;
+                            } else {
+                                //登录成功，跳转到首页
+                                obj.success = "http://www.taotao.com/";
+                            }
 	                        var isIE = !-[1,];
 	                        if (isIE) {
 	                            var link = document.createElement("a");

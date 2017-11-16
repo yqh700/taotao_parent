@@ -27,6 +27,10 @@
 	<dubbo:reference interface="com.taotao.cart.service.CartService"
 					 timeout="1000000" id="cartService"></dubbo:reference>
 
+	<!--订单-->
+	<dubbo:reference interface="com.taotao.order.service.OrderService"
+					 timeout="1000000" id="orderService"></dubbo:reference>
+
 	<!--商品-->
 	<dubbo:reference interface="com.taotao.manager.service.ItemService"
 					 timeout="1000000" id="itemService"></dubbo:reference>
